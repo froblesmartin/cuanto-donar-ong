@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css">
+  <title>¿Cuánto donar?</title>
+  <script src="calculate.js" async defer></script>
+</head>
+
+<body>
+  <div>
+    <h1>¿Cuánto donar a una ONG?</h1>
+    <p>
+      ¡Bienvenido!
+      <br>
+      Si has llegado hasta aquí es porque te estás planteando donar dinero a una ONG.
+      <br>
+      ¡Esa es una gran idea &#128512;!
+    </p>
+
+    <h2>Objetivo</h2>
+    <p><b>Animar a la gente a donar</b> a la ONG que prefiera, y calcular cuánto dinero de su <b>sueldo neto</b>
+      (lo que nos llega al banco) donar.
+    </p>
+
+    <p>
+      Lo primero, hay que elegir una ONG a la que donar. Personalmente
+      recomendamos que sea una ONG que conozcais de cerca (lo más posible). En nuestro caso, por conocimiento de
+      primera mano, donamos a la <a href="https://www.misionerasinmaculadaconcepcion.com.es/dondeestamos/signos-solidarios/index.html" target="_blank">Fundación Signos Solidarios</a>, pero hay miles. Entre otras formas de encontrar una,
+      hay <a href="https://www.aecid.es/ES/Paginas/La%20AECID/Nuestros%20Socios/ONGD/Registro/Buscador.aspx" target="_blank">un buscador oficial de ONGDs (especializadas en desarrollo).</a>
+    </p>
+
+    <h2>¡Al lío!</h2>
+    <p>
+      Cuando me decidí a donar, lo enfoqué como un porcentaje de mi sueldo. Pensé que un 2% era algo muy asumible.
+      Si ganaba 1000€ al mes, donaría 20€. La sorpresa fue al hacer la declaración de la renta el año siguiente,
+      resultó que de los 240€ que había donado, ¡me devolvían 151,5€!.
+    </p>
+
+    <p>
+      Así me enteré de que cuando donamos a una ONG, hay parte (una buena parte) que nos desgravamos cuando hacemos la declaración de la
+      renta. Desde el 2020 <a href="https://www.boe.es/boe/dias/2020/05/06/pdfs/BOE-A-2020-4832.pdf" target="_blank">(enlace al BOE)</a>,
+      <b>los primeros 150€ al año tienen un 80% de deducción (120€)</b> y lo que supera esa cantidad, un 35%, que sube a
+      un 40% si en los 2 años previos se ha donado lo mismo o más a la misma ONG.
+      Así, nos hemos animado a hacer esta web para calcular cuánto donar, basándonos en la cantidad que de verdad
+      vamos a quitarnos de nuestros ingresos.
+    </p>
+  </div>
+
+  <div>
+    <h3>¿Cuánto dinero de tu sueldo neto quieres donar?</h3>
+    <select id="mode" name="mode">
+      <option value="annual">Anual</option>
+      <option value="monthly">Mensual</option>
+    </select>
+    <input type="number" id="quantity" name="quantity" min="0" value="30">
+    <input type="button" value="Calcular" onclick="calculate();">
+
+    <p>Cantidad a donar:</p>
+    <p class="result" id="result">&#129303;</p>
+  </div>
+
+  <!-- <img src="images/table.jpg"> -->
+
+  <p>
+    Varios ejemplos de cantidades :
+    <ul>
+      <li>20€ anuales: donaremos 100€, ya que nos devolverán 80€.</li>
+      <li>30€ anuales: donaremos 150€, ya que nos devolverán 120€.</li>
+      <li>100€ anuales: donaremos aproximadamente 258€, ya que nos devolverán 158€ (120€ de los primeros 150€
+        y 38€ de los 108€ restantes).</li>
+    </ul>
+  </p>
+
+  <br>
+
+  <footer>Made with &hearts; by
+  <a href="https://www.linkedin.com/in/helena-scastanar/" target="_blank">Helena</a>
+  &
+  <a href="https://www.linkedin.com/in/froblesmartin/" target="_blank">Fran</a>
+</footer>
+
+</body>
+</html>
