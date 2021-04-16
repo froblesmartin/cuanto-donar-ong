@@ -34,9 +34,9 @@ function calculate() {
 
   result = result / multiplier;
 
-  document.getElementById("result").innerHTML = result.toFixed(2) + "€ " + modeResponse +
-    " <br> " +
-    "Nos devuelven " + deduction.toFixed(2) + "€ " + modeResponse;
+  document.getElementById("result").innerHTML = result.toFixed(2) + "€ " + modeResponse;
+
+  document.getElementById("deduction").innerHTML = "Nos devuelven " + deduction.toFixed(2) + "€ " + modeResponse;
 
   return (0)
 }
