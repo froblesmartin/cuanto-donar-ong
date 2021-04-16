@@ -4,6 +4,8 @@ function calculate() {
   var result;
   var mode = document.getElementById("mode");
   var multiplier = mode.value == "monthly" ? 12 : 1;
+  var modeResponse = mode.value == "monthly" ? "al mes" : "al año";
+  var deduction
 
   // Corner cases
   if (isNaN(quantity)) {
@@ -28,9 +30,13 @@ function calculate() {
     result = Number(quantity / 0.2);
   }
 
+  deduction = (result - quantity) / multiplier;
+
   result = result / multiplier;
 
-  document.getElementById("result").innerHTML = result.toFixed(2) + "€ / "
-    + mode.options[mode.selectedIndex].text;
+  document.getElementById("result").innerHTML = result.toFixed(2) + "€ " + modeResponse +
+    " <br> " +
+    "Nos devuelven " + deduction.toFixed(2) + "€ " + modeResponse;
+
   return (0)
 }
