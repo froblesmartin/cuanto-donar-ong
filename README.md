@@ -2,3 +2,10 @@
 
 # cuanto-donar-ong
 Sencilla web para calcular cuanto donar basándose en los ingresos netos
+
+## Hosting:
+Está desplegado en varios hostings gratuitos pero solo se utiliza uno:
+- **Cloudflare Pages** (actual)
+- Netlify
+- GitHub Pages
+
