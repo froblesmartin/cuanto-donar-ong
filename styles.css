@@ -11,13 +11,28 @@ html {
 
 body {
   text-align: center;
-  max-width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  text-align: center;
+  min-height: calc(100vh - 5rem);
+  width: 85vw;
+  max-width: 70rem;
+  overflow: hidden;
   margin: auto;
+  padding-top: 20px;
 }
 
 h1 {
   font-size: clamp(30px, 5.9vw, 60px);
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 h2 {
@@ -82,8 +97,13 @@ select {
 }
 
 footer {
-  width: 90%;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin: auto;
-  background-color: #7F88B5;
+  margin-top: 3rem;
+  background-color: #7f88b5;
   color: white;
 }
