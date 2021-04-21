@@ -1,103 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="ONG, organización sin ánimo de lucro, donar, donar dinero, deducciones">
-  <meta name="author" content="co-authored by Helena Sánchez Castañar y Francisco Robles Martín">
-  <meta name="robots" content="index"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="ONG, organización sin ánimo de lucro, donar, donar dinero, deducciones">
+    <meta name="author" content="co-authored by Helena Sánchez Castañar y Francisco Robles Martín">
+    <meta name="robots" content="index"/>
 
-  <meta property="og:title" content="¿Cuánto donar a una ONG?" />
-  <meta property="og:locale" content="es_ES" />
-  <meta property="og:site_name" content="CuantoDonar" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://cuantodonar.es/" />
-  <meta name="image" property="og:image" content="https://cuantodonar.es/images/light-bulb-color.png" />
-  <meta property="og:image:secure_url" content="https://cuantodonar.es/images/light-bulb-color.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="480" />
-  <meta property="og:image:height" content="512" />
-  <meta property="og:og:updated_time" content="1618949687" />
+    <meta property="og:title" content="¿Cuánto donar a una ONG?" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="CuantoDonar" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cuantodonar.es/" />
+    <meta name="image" property="og:image" content="https://cuantodonar.es/images/light-bulb-color.png" />
+    <meta property="og:image:secure_url" content="https://cuantodonar.es/images/light-bulb-color.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="480" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:og:updated_time" content="1618949687" />
 
-  <link rel="stylesheet" href="./styles.css">
-  <script src="calculate.js" async defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="calculate.js" async defer></script>
 
-  <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
 
-  <title>¿Cuánto donar a una ONG?</title>
-  <meta name="description" property="og:description" content="Cálcula cuánto donar a una ONG teniendo en cuenta que Hacienda te devolverá parte en la declaración de la renta.">
-</head>
+    <title>¿Cuánto donar a una ONG?</title>
+    <meta name="description" property="og:description" content="Cálcula cuánto donar a una ONG teniendo en cuenta que Hacienda te devolverá parte en la declaración de la renta.">
+  </head>
 
-<body>
-<main>
-  <div>
-    <h1>¿Cuánto donar a una ONG?</h1>
-    <p>
-      ¡Bienvenid@!
-      <br>
-      Si has llegado hasta aquí es porque te estás planteando donar dinero a una ONG.
-      <br>
-      &#128161; ¡Esa es una gran idea! &#128161;
-    </p>
+  <body>
+  <main>
+    <div>
+      <h1>¿Cuánto donar a una ONG?</h1>
+      <p>
+        ¡Bienvenid@!
+        <br>
+        Si has llegado hasta aquí es porque te estás planteando donar dinero a una ONG.
+        <br>
+        &#128161; ¡Esa es una gran idea! &#128161;
+      </p>
 
-    <h2>Objetivo</h2>
-    <p><b>Animar a la gente a donar</b> a la ONG que prefiera, y calcular cuánto dinero de su <b>sueldo neto</b>
-      (lo que nos llega al banco) donar.
-    </p>
+      <h2>Objetivo</h2>
+      <p><b>Animar a la gente a donar</b> a la ONG que prefiera, y calcular cuánto dinero de su <b>sueldo neto</b>
+        (lo que nos llega al banco) donar.
+      </p>
 
-    <p>
-      Lo primero, hay que elegir una ONG a la que donar. Personalmente recomendamos que sea una ONG que conozcais de cerca
-      (lo más posible). En nuestro caso, por conocimiento de primera mano, donamos a la
-      <a href="https://www.misionerasinmaculadaconcepcion.com.es/dondeestamos/signos-solidarios/index.html" target="_blank">Fundación Signos Solidarios</a>,
-      pero hay miles. Entre otras formas de encontrar una, hay
-      <a href="https://www.aecid.es/ES/Paginas/La%20AECID/Nuestros%20Socios/ONGD/Registro/Buscador.aspx" target="_blank">un buscador oficial de ONGDs (especializadas en desarrollo).</a>
-    </p>
+      <p>
+        Lo primero, hay que elegir una ONG a la que donar. Personalmente recomendamos que sea una ONG que conozcais de cerca
+        (lo más posible). En nuestro caso, por conocimiento de primera mano, donamos a la
+        <a href="https://www.misionerasinmaculadaconcepcion.com.es/dondeestamos/signos-solidarios/index.html" target="_blank">Fundación Signos Solidarios</a>,
+        pero hay miles. Entre otras formas de encontrar una, hay
+        <a href="https://www.aecid.es/ES/Paginas/La%20AECID/Nuestros%20Socios/ONGD/Registro/Buscador.aspx" target="_blank">un buscador oficial de ONGDs (especializadas en desarrollo).</a>
+      </p>
 
-    <h2>¡Al lío!</h2>
-    <p>
-      Cuando me decidí a donar, lo enfoqué como un porcentaje de mi sueldo. Pensé que un 2% era algo muy asumible.
-      Si ganaba 1000€ al mes, donaría 20€. La sorpresa fue al hacer la declaración de la renta el año siguiente,
-      resultó que de los 240€ que había donado, <b>¡me devolvían 151,5€!</b>
-    </p>
+      <h2>¡Al lío!</h2>
+      <p>
+        Cuando me decidí a donar, lo enfoqué como un porcentaje de mi sueldo. Pensé que un 2% era algo muy asumible.
+        Si ganaba 1000€ al mes, donaría 20€. La sorpresa fue al hacer la declaración de la renta el año siguiente,
+        resultó que de los 240€ que había donado, <b>¡me devolvían 151,5€!</b>
+      </p>
 
-    <p>
-      Así me enteré de que cuando donamos a una ONG, hay parte (una buena parte) que nos desgravamos cuando hacemos la declaración de la
-      renta. Desde el 2020 <a href="https://www.boe.es/boe/dias/2020/05/06/pdfs/BOE-A-2020-4832.pdf" target="_blank">(enlace al BOE)</a>,
-      <b>los primeros 150€ al año tienen un 80% de deducción (120€)</b> y lo que supera esa cantidad, un 35%, que sube a
-      un 40% si en los 2 años previos se ha donado lo mismo o más a la misma ONG.
-      Así, nos hemos animado a hacer esta web para calcular cuánto donar, basándonos en la cantidad que de verdad
-      vamos a quitarnos de nuestros ingresos.
-    </p>
-  </div>
+      <p>
+        Así me enteré de que cuando donamos a una ONG, hay parte (una buena parte) que nos desgravamos cuando hacemos la declaración de la
+        renta. Desde el 2020 <a href="https://www.boe.es/boe/dias/2020/05/06/pdfs/BOE-A-2020-4832.pdf" target="_blank">(enlace al BOE)</a>,
+        <b>los primeros 150€ al año tienen un 80% de deducción (120€)</b> y lo que supera esa cantidad, un 35%, que sube a
+        un 40% si en los 2 años previos se ha donado lo mismo o más a la misma ONG.
+        Así, nos hemos animado a hacer esta web para calcular cuánto donar, basándonos en la cantidad que de verdad
+        vamos a quitarnos de nuestros ingresos.
+      </p>
+    </div>
 
-  <br>
-  <br>
+    <br>
 
-  <div>
-    <h3>¿Cuánto dinero de tu sueldo neto quieres donar?</h3>
-    <select id="mode" name="mode">
-      <option value="annual">Anual</option>
-      <option value="monthly">Mensual</option>
-    </select>
-    <input type="number" id="quantity" name="quantity" min="0" value="30">
-    <input type="button" value="Calcular" onclick="calculate();">
+    <div>
+      <h3>¿Cuánto dinero de tu sueldo neto quieres donar?</h3>
+      <select id="mode" name="mode">
+        <option value="annual">Anual</option>
+        <option value="monthly">Mensual</option>
+      </select>
+      <input type="number" id="quantity" name="quantity" min="0" value="30">
+      <input type="button" value="Calcular" onclick="calculate();">
 
-    <p><b>Cantidad a donar:</b></p>
-    <p class="result" id="result">&#129303;</p>
-    <p id="deduction"><br></p>
-  </div>
+      <p><b>Cantidad a donar:</b></p>
+      <p class="result" id="result">&#129303;</p>
+      <p id="deduction"><br></p>
+    </div>
 
-  <br>
-  <br>
-</main>
+  </main>
+  </body>
 
-</body>
-
-<footer>Made with &hearts; by&nbsp
-  <a href="https://www.linkedin.com/in/helena-scastanar/" target="_blank">Helen</a>
-  &nbsp&&nbsp
-  <a href="https://www.linkedin.com/in/froblesmartin/" target="_blank">Fran</a>
-</footer>
+  <footer>Made with &hearts; by&nbsp
+    <a href="https://www.linkedin.com/in/helena-scastanar/" target="_blank">Helen</a>
+    &nbsp&&nbsp
+    <a href="https://www.linkedin.com/in/froblesmartin/" target="_blank">Fran</a>
+  </footer>
 
 </html>
