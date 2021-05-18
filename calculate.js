@@ -33,10 +33,13 @@ function calculate() {
   deduction = (result - quantity) / multiplier;
 
   result = result / multiplier;
+  
+  var resultWithComma = result.replace(/./g, ',')
+  var deductionWithComma = deduction.replace(/./g, ',') 
 
-  document.getElementById("result").innerHTML = result.toFixed(2) + "€ " + modeResponse;
+  document.getElementById("result").innerHTML = resultWithComma.toFixed(2) + "€ " + modeResponse;
 
-  document.getElementById("deduction").innerHTML = "Nos devuelven " + deduction.toFixed(2) + "€ " + modeResponse;
+  document.getElementById("deduction").innerHTML = "Nos devuelven " + deductionWithComma.toFixed(2) + "€ " + modeResponse;
 
   return (0)
 }
